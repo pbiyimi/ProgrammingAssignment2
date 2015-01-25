@@ -1,0 +1,8 @@
+x = rbind(c(1,2), c(3,4))
+cachematrix <- makeCacheMatrix(x)
+solution <- cacheSolve(cachematrix)
+print(solution)
+solution2 <- cacheSolve(cachematrix)
+print(solution2)
+print(solution2 %*% x)
+print(x %*% solution2)
